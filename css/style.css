@@ -1,0 +1,61 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 60px;
+}
+
+h2 {
+  margin: 0px;
+  display: block;
+}
+
+select {
+ display: block;
+  font-size: 24px;
+  padding: 10px 200px 10px 10px;
+  margin: 0 auto;
+}
+footer {
+  opacity: 0.9;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 13px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  background: white;
+  padding: 80px 100px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  border-radius: 10px;
+}
+
+.cities {
+  margin-top: 50px;
+}
+
+.city {
+    border-bottom: 5px dotted #6B37EA;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.time {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.date {
+    margin: 10px 0px;
+    opacity: 0.7;
+}
