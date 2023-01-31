@@ -13,21 +13,21 @@
     <h1>World Clock</h1>
     <div class="container">
       <select name="citySelect" id="citySelect">
-        <option value="">Select a city</option>
-        <option value="London">London</option>
-        <option value="Bangkok">Bangkok</option>
-        <option value="Sydney">Sydney</option>
+        <option value="" name="">Select a city</option>
+        <option value="Europe/London">London</option>
+        <option value="America/New_York">New York</option>
+        <option value="Australia/Sydney">Sydney</option>
       </select>
 
-      <div class="cities">
-        <div class="city" id="edinburgh">
+      <div id="cities">
+        <div class="city" id="edinburgh" value="Europe/London">
           <div>
             <h2>Edinburgh</h2>
             <div class="date"></div>
           </div>
           <div class="time"></div>
         </div>
-        <div class="city" id="bangkok">
+        <div class="city" id="bangkok" value="Asia/Bangkok">
           <div>
             <h2>Bangkok</h2>
             <div class="date"></div>
