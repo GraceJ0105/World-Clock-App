@@ -1,10 +1,13 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Didot, Didot LT STD, Hoefler Text, Garamond, Calisto MT,
+    Times New Roman, serif;
 }
 
 h1 {
   text-align: center;
   margin-top: 60px;
+  font-weight: bold;
+  font-size: 40px;
 }
 
 h2 {
@@ -13,16 +16,19 @@ h2 {
 }
 
 select {
- display: block;
+  display: block;
   font-size: 24px;
   padding: 10px 200px 10px 10px;
   margin: 0 auto;
+  font-weight: bold;
+  font-family: Didot, Didot LT STD, Hoefler Text, Garamond, Calisto MT,
+    Times New Roman, serif;
 }
 footer {
   opacity: 0.9;
   text-align: center;
   margin-top: 50px;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 a {
@@ -31,7 +37,7 @@ a {
 
 .container {
   max-width: 600px;
-  margin: 40px auto;
+  margin: 30px auto;
   background: white;
   padding: 80px 100px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
@@ -44,18 +50,18 @@ a {
 }
 
 .city {
-    border-bottom: 5px dotted #6B37EA;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
+  border-bottom: 5px dotted #6b37ea;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
 }
 
 .time {
-    font-size: 24px;
-    margin-top: 20px;
+  font-size: 24px;
+  margin-top: 20px;
 }
 
 .date {
-    margin: 10px 0px;
-    opacity: 0.7;
+  margin: 10px 0px;
+  opacity: 0.7;
 }
