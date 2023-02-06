@@ -37,7 +37,7 @@ function updateCity(event) {
   setInterval(function () {
     let selectedTimezone = event.target.value;
     if (selectedTimezone === " ") {
-      window.location.reload();
+      refreshPage();
     }
     let cityName = selectedTimezone.replace("_", " ").split("/")[1];
     let selectedTime = moment().tz(selectedTimezone);
@@ -49,6 +49,8 @@ function updateCity(event) {
           </div>
           <div class="time">${selectedTime.format("h:mm:ss A")}</div>
         </div>`;
+    let buttonElement = document.querySelector("#refreshButton");
+    buttonElement.innerHTML = `<a class="button" href="/">Back to all cities</a>`;
   }, 1000);
 }
 
@@ -70,13 +72,12 @@ function searchLocation(position) {
   axios.get(apiUrl).then(updateCityName);
 }
 
-//function getCurrentLocation() {
-//navigator.geolocation.getCurrentPosition(searchLocation);
-//}
+function refreshPage() {
+  window.location.reload();
+}
 
 updateTime();
 setInterval(updateTime, 1000);
 
 let citiesSelectElement = document.querySelector("#citySelect");
-
 citiesSelectElement.addEventListener("change", updateCity);
